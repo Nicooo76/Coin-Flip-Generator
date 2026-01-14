@@ -75,6 +75,13 @@ body{
   align-items:start;
 }
 
+/* Elemente die über beide Spalten gehen sollen */
+.app > hr,
+.app > .seoBlock,
+.app > .faqCard{
+  grid-column: 1 / -1;
+}
+
 /* MOBILE: one column + better stage sizing */
 @media (max-width: 980px){
   :root{
@@ -664,6 +671,7 @@ button, .switch, input, select { touch-action: manipulation; }
   border-radius: var(--r);
   box-shadow: var(--shadow);
   overflow:hidden;
+  margin-top: 32px;
 }
 .faqHead{
   padding:16px;
